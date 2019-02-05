@@ -1,4 +1,8 @@
-.logo {
+* {
+  background-color: salmon;
+}
+
+#logo {
   padding-top: 200px;
 }
 
@@ -10,7 +14,7 @@ h1 {
 }
 h2, p {
   font-size: 50px;
-  font-family: baskerville;
+  font-family: helvetica;
   text-align: center;
 }
 
@@ -36,7 +40,6 @@ url("./fonts/mexcellent3d.svg#filename") format("svg");
 }
 html {
   <!-- background: url("../resources/images/cactus.png"); -->
-  background-color: peach;
   background-size: cover;
   width: 1200px;
   height: 1200px;
