@@ -1,0 +1,44 @@
+.logo {
+  padding-top: 200px;
+}
+
+h1 {
+  font-family: mexcellent3d;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 100PX;
+}
+h2, p {
+  font-size: 50px;
+  font-family: baskerville;
+  text-align: center;
+}
+
+
+h2 {
+  text-decoration: underline;
+}
+
+img {
+  align-items: center;
+}
+@font-face {
+font-family: "mexcellent3d";
+src: url("./fonts/mexcellent3d.ttf");
+src:
+url("./fonts/mexcellent3d.ttf") format("ttf"),
+url("./fonts/mexcellent3d.ttf") format("opentype"),
+url("./fonts/mexcellent3d.svg#filename") format("svg");
+}
+@font-face {
+  font-family: "mexcellentrg";
+  src: url("./fonts/mexcellentrg.ttf");
+}
+html {
+  <!-- background: url("../resources/images/cactus.png"); -->
+  background-color: peach;
+  background-size: cover;
+  width: 1200px;
+  height: 1200px;
+}
+dogs
