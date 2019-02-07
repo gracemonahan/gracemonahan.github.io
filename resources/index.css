@@ -5,8 +5,13 @@
 
 li {
   color: salmon;
-  font-family: helvetica;
+  font-family: filson-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   background-color: white;
+  display: inline-block;
+  width: 130px;
+
 }
 
 .header {
@@ -24,6 +29,7 @@ ul {
   padding: 0px;
   text-align: center;
   width: 100%;
+  background-color: inherit;
 }
 
 .logo {
