@@ -3,17 +3,27 @@
   color: white;
 }
 
-.header li {
-  background-color: white;
+li {
   color: salmon;
   font-family: helvetica;
+  background-color: white;
 }
 
 .header {
   position: fixed;
+  background-color: white;
+  width: 100%;
+  margin-top: -150px;
+  margin-left: -9px;
+  padding: 0px;
+  border: 3px white solid;
+  opacity: 0.5;
+}
 
-  width: 1200px;
-
+ul {
+  padding: 0px;
+  text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -22,7 +32,7 @@
   width: 700px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 150px;
   margin-bottom: 10px;
   letter-spacing: 10px;
 
@@ -47,6 +57,13 @@ h2 {
 img {
   align-items: center;
 }
+
+.box {
+  width: auto;
+  height: 1000px;
+  background-color: inherit;
+}
+
 @font-face {
 font-family: "mexcellent3d";
 src: url("./fonts/mexcellent3d.ttf");
