@@ -9,62 +9,56 @@ li {
   font-style: normal;
   font-weight: 500;
   background-color: white;
-  display: inline-block;
-  width: 110px;
+  display: inline-flex;
+  justify-content: flex-end;
   height: 20px;
+  padding: 10px;
   letter-spacing: 2px;
+  align-items: center;
+  border: 2px black solid;
 }
 
 #logo-g {
   font-family: mexcellent3d;
   font-weight: lighter;
-  font-size: 35px;
-  padding-left: 40px;
-  text-align: left;
-  display: inline-block;
-  background-color: white;
   color: salmon;
-  position: fixed;
-  height: 20px;
-  top: 5px;
-}
+  background-color: white;
+  font-size: 35px;
+ }
 
 .header {
   position: fixed;
+  top: 0;
   background-color: white;
   width: 100%;
-  margin-top: -150px;
   margin-left: -9px;
   padding: 0px;
   border: 3px white solid;
   opacity: 1;
+  justify-content: center;
+  display: flex;
+  z-index: 10;
 }
 
 ul {
-  padding: 0px;
-  text-align: center;
-  width: 100%;
+  display: inline-block;
   background-color: inherit;
 }
 
-.logo {
+h1.logo {
   padding: 1px 10px;
   border: 10px white solid;
   width: 700px;
-  text-align: center;
   margin: 0 auto;
   margin-top: 150px;
   margin-bottom: 10px;
   letter-spacing: 10px;
-
-}
-
-h1 {
   font-family: mexcellent3d;
   font-weight: lighter;
   text-align: center;
   font-size: 100PX;
-  display: inline;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -84,6 +78,12 @@ img {
   width: auto;
   height: 1000px;
   background-color: inherit;
+}
+
+.email-signup {
+  display: flex;
+  position: static;
+  background-color: blue;
 }
 
 @font-face {
