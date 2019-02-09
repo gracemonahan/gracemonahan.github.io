@@ -15,7 +15,7 @@ li {
   padding: 10px;
   letter-spacing: 2px;
   align-items: center;
-  border: 2px black solid;
+
 }
 
 #logo-g {
@@ -24,6 +24,7 @@ li {
   color: salmon;
   background-color: white;
   font-size: 35px;
+  margin-top: 10px;
  }
 
 .header {
@@ -80,10 +81,13 @@ img {
   background-color: inherit;
 }
 
-.email-signup {
-  display: flex;
-  position: static;
-  background-color: blue;
+#mc_embed_signup {
+  display: block;
+  justify-content: center;
+  background:#fff;
+  font:25px Helvetica;
+  text-align: center;
+  width:100%;
 }
 
 @font-face {
