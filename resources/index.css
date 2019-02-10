@@ -1,21 +1,26 @@
 * {
-  background-color: white;
   color: salmon;
 }
 
+ul {
+  display: inline-block;
+  text-align: center;
+  background-color: inherit;
+  color: white;
+}
+
 li {
-  color: salmon;
+  color: white;
   font-family: filson-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
-  background-color: white;
+  background-color: salmon;
   display: inline-flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  width: auto;
   height: 20px;
-  padding: 10px;
+  padding: 5px 50px 5px 50px;
   letter-spacing: 2px;
-  align-items: center;
-
 }
 
 #logo-g {
@@ -24,55 +29,52 @@ li {
   color: salmon;
   background-color: white;
   font-size: 35px;
-  border: solid salmon 2px;
-  border-radius: 100%;
+  border: solid white 2px;
  }
 
 .header {
   position: fixed;
   top: 0;
-  background-color: white;
+  background-color: salmon;
   width: 100%;
-  padding: 0px;
   opacity: 1;
   justify-content: center;
   display: inline-flex;
   z-index: 10;
-}
-
-ul {
-  display: inline-block;
-  background-color: inherit;
+  margin-left: -10px;
+  border: 1px solid white;
 }
 
 h1.logo {
-  padding: 1px 10px;
-  border: 10px white solid;
+  padding: 20px 10px;
   width: 700px;
   margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 10px;
+  margin-top: 200px;
+  margin-bottom: 0px;
   letter-spacing: 10px;
   font-family: mexcellent3d;
   font-weight: lighter;
-  text-align: center;
   font-size: 100PX;
-  display: flex;
-  justify-content: center;
+  position: static;
+  text-align: center;
+  color: white;
 }
 
 
-h2 {
-  font-weight: 100;
+h2.greeting {
+  font-weight: normal;
   text-align: center;
   font-size: 20px;
   font-family: helvetica;
   letter-spacing: 2px;
+  color: white;
+  margin: 0px auto;
+  top: 1px;
+  padding-top: -20px;
+  position: inline;
 }
 
-img {
-  align-items: center;
-}
+
 
 .box {
   width: auto;
@@ -80,13 +82,18 @@ img {
   background-color: inherit;
 }
 
-#mc_embed_signup {
-  display: block;
-  justify-content: center;
-  background:#fff;
-  font:25px Helvetica;
-  text-align: center;
-  width:100%;
+.image_background {
+  background-image: url("./images/lobsterblue.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 750px;
+  margin-left: 0px;
+  opacity: 1;
+  border: 1px white solid;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 @font-face {
@@ -104,8 +111,4 @@ url("./fonts/mexcellent3d.svg#filename") format("svg");
   url("./fonts/mexcellentrg.ttf") format("ttf"),
   url("./fonts/mexcellentrg.ttf") format("opentype"),
   url("./fonts/mexcellentrg.svg#filename") format("svg");
-}
-html {
-  <!-- background: url("../resources/images/cactus.png"); -->
-  background-size: cover;
 }
