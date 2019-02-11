@@ -2,34 +2,68 @@
   color: salmon;
 }
 
-ul {
-  display: inline-block;
-  text-align: center;
+.header {
+  position: fixed;
+  background-color: salmon;
+  top: 0;
+  width: 100%;
+  margin-left: -10px;
+
+}
+
+.flexy {
+  display: flex;
+  justify-content: center;
   background-color: inherit;
-  color: white;
+}
+
+ul {
+  list-style: none;
 }
 
 li, a {
   color: white;
   font-family: futura;
-  font-style: bolder;
+  font-style: bold;
+  letter-spacing: 3px;
   background-color: salmon;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
-  width: auto;
-  height: 20px;
-  padding: 5px 5px;
-  letter-spacing: 2px;
+
+  padding-right: 20px;
+  height: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
+
+ #logo-g {
+  font-family: mexcellent3d;
+  font-weight: lighter;
+  color: white;
+  background-color: inherit;
+  font-size: 35px;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+ }
+
+ #signup, #login {
+   color: white;
+   justify-content: flex-end;
+   align-items: flex-end;
+
+ }
+
 
 .about {
   height: 200px;
   background-color: white;
   justify-content: center;
   display: flex;
-  margin: 100px 75px 100px 75px;
+  margin: 0px auto;
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 .about p {
@@ -41,29 +75,6 @@ li, a {
   font-weight: bolder;
   font-family: futura;
   letter-spacing: 2px;
-
-}
-
-#logo-g {
-  font-family: mexcellent3d;
-  font-weight: lighter;
-  color: salmon;
-  background-color: white;
-  font-size: 35px;
-  border: solid white 2px;
- }
-
-.header {
-  position: fixed;
-  top: 0;
-  background-color: salmon;
-  width: 100%;
-  opacity: 1;
-  justify-content: center;
-  display: inline-flex;
-  z-index: 10;
-  margin-left: -10px;
-  border: 1px solid white;
 }
 
 h1.logo {
@@ -81,7 +92,6 @@ h1.logo {
   color: white;
 }
 
-
 h2.greeting {
   font-weight: bold;
   text-align: center;
@@ -95,8 +105,6 @@ h2.greeting {
   position: inline;
 }
 
-
-
 .box {
   width: 100px;
   height: 100px;
@@ -107,7 +115,7 @@ h2.greeting {
   margin-left: 300px;
 }
 
-.image_background {
+.lobster_background {
   background-image: url("./images/lobsterblue.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -121,7 +129,7 @@ h2.greeting {
   margin-right: -10px;
 }
 
-.egg_background {
+#kontakt {
   background-image: url("./images/egg.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -146,8 +154,6 @@ h2.greeting {
   color: white;
   margin-top: 200px;
 }
-
-
 
 @font-face {
 font-family: "mexcellent3d";
