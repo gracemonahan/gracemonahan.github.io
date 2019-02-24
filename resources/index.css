@@ -2,79 +2,103 @@
   color: salmon;
 }
 
-.header {
+html {
+  font-family: futura;
+}
+
+a {
+  text-decoration: none;
+}
+h1  {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+/*header*/
+header {
   position: fixed;
   background-color: salmon;
   top: 0;
-  width: 100%;
-  margin-left: -10px;
-
-}
-
-.flexy {
+  width: 1200px;
+  height: 69px;
+  z-index: 1;
   display: flex;
-  justify-content: center;
-  background-color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-li, a {
-  color: white;
-  font-family: futura;
-  font-style: bold;
-  letter-spacing: 3px;
-  background-color: salmon;
-  text-decoration: none;
-
-  padding-right: 20px;
-  height: 10px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  display: flex;
+  margin-left: -10px;
 }
 
- #logo-g {
-  font-family: mexcellent3d;
-  font-weight: lighter;
+nav {
+  display: flex;
+  padding-right: 10px;
+  z-index: 1;
+  background-color: salmon;
+}
+
+nav a {
   color: white;
-  background-color: inherit;
-  font-size: 35px;
+  padding-right: 20px;
+  font-family: futura;
+  text-decoration: none;
+}
+
+ #logo-small {
+  font-family: mexcellent3d;
+  color: white;
+  background-color: salmon;
+  font-size: 45px;
   align-items: flex-start;
   display: flex;
   justify-content: flex-start;
   margin-left: 10px;
+  flex-grow: 1;
+  text-decoration: none;
+ }
+
+ #logo-small a {
+   color: inherit;
+   text-decoration: none;
  }
 
  #signup, #login {
    color: white;
    justify-content: flex-end;
    align-items: flex-end;
-
  }
 
-
-.about {
-  height: 200px;
-  background-color: white;
-  justify-content: center;
-  display: flex;
-  margin: 0px auto;
-  padding-top: 70px;
-  padding-bottom: 20px;
-}
-
-.about p {
+ #button {
+   border: 2px white solid;
+   border-radius: 30px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+ }
+ #button a {
+   color: salmon;
+   text-align: center;
+ }
+/* end header*/
+/*start lobster section*/
+.lobster_background {
+  background-image: url("./images/lobster.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 750px;
+  width: 1200px;
+  margin-left: 0px;
+  opacity: 1;
   border: 1px white solid;
-  display: inline;
-  font-size: 20px;
-  line-height: 40px;
-  text-align: center;
-  font-weight: bolder;
-  font-family: futura;
-  letter-spacing: 2px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 h1.logo {
@@ -91,7 +115,6 @@ h1.logo {
   text-align: center;
   color: white;
 }
-
 h2.greeting {
   font-weight: bold;
   text-align: center;
@@ -105,6 +128,54 @@ h2.greeting {
   position: inline;
 }
 
+.zufall {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.zufall span {
+  height: 260px;
+  width: 400px;
+  color: white;
+  font-size: 25px;
+  font-weight: 550;
+  letter-spacing: 1.1px;
+  margin-top: 100px;
+}
+/*end lobster section */
+
+#warum {
+  height: 200px;
+  width: auto;
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 0px;
+
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+}
+
+#warum p {
+  border: 1px white solid;
+  display: inline;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: futura;
+  letter-spacing: 2px;
+}
+
+
+
+/*mailchimp style code*/
 #mc_embed_signup {
   background-color: inherit;
   clear:left;
@@ -116,63 +187,24 @@ h2.greeting {
   border: 3px salmon solid;
   padding: 20px;
 }
-
 .mailchimp {
   align-content: center;
   display: flex;
 }
 
-.box {
-  width: 100%;
-  height: 200px;
-  background-color: inherit;
-  border: 3px salmon solid;
-  position: relative;
-  display: block;
-  margin-bottom: 70px;
-}
 
-.lobster_background {
-  background-image: url("./images/lobsterblue.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 750px;
-  margin-left: 0px;
-  opacity: 1;
-  border: 1px white solid;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-#kontakt {
+#bottom {
   background-image: url("./images/egg.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 750px;
+  width: 1200px;
   margin-left: -10px;
   margin-right: -10px;
+  flex-grow: 1;
 }
-
-#email {
-  display: inline-flex;
-  margin-left: 350px;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  line-height: 40px;
-  text-align: center;
-  font-weight: bolder;
-  font-family: futura;
-  letter-spacing: 2px;
-  color: white;
-  margin-top: 100px;
-  margin-bottom: 150px;
-}
-
 #wir {
   font-weight: bold;
   text-align: center;
@@ -180,12 +212,67 @@ h2.greeting {
   font-family: futura;
   letter-spacing: 2px;
   color: white;
-  margin: 0px auto;
-  top: 1px;
-  padding-top: -20px;
-  position: inline;
+  padding-top: 120px;
+}
+/*FOOTER*/
+footer {
+background-color: salmon;
+top: 0;
+bottom: 0;
+width: 1200px;
+height: 50px;
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: -10px;
 }
 
+footer a {
+  margin-left: 15px;
+}
+nav span {
+  color: white;
+}
+.email {
+  text-decoration: underline;
+}
+
+/*GASTRO for Service+Gastronomen page style code*/
+.service span {
+  color: white;
+  text-align: left;
+  font-size: 25px;
+}
+
+.box {
+  width: 1100px;
+  height: 400px;
+  border: black 2px solid;
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blue.box {
+  background-color: #aac9de;
+  height: 500px;
+}
+
+.yellow.box {
+  background-color: #ffdf45;
+}
+
+.green {
+  background-color: #B6CE9F;
+}
+
+
+
+
+/*font stuff for Mexcellent*/
 @font-face {
 font-family: "mexcellent3d";
 src: url("./fonts/mexcellent3d.ttf");
